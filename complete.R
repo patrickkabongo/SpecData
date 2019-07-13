@@ -14,5 +14,7 @@ complete <- function(directory, id = 1:332){
         x <- cbind(idv,sumC)
         colnames(x) <- c("id","nobs")
         
+        x <- as.data.frame(x)
+        
         x
 }
